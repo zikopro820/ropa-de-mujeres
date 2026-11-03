@@ -3,172 +3,181 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NARA Atelier | Moda femenina atemporal</title>
-  <meta name="description" content="Vestidos, sastrería, blusas, abrigos y accesorios para mujer. Moda atemporal hecha en Perú, con envíos a todo el país.">
-  <meta property="og:title" content="NARA Atelier | Moda femenina atemporal">
-  <meta property="og:description" content="Vestidos, sastrería, blusas, abrigos y accesorios para mujer. Moda atemporal hecha en Perú, con envíos a todo el país.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1781496266499-a4516f159c10?auto=format&fit=crop&w=1200&q=80">
-  <meta name="theme-color" content="#f7f3ee">
+  <title>NARA | Moda para mujer con ofertas todos los días</title>
+  <meta name="description" content="Vestidos, blusas, sastrería, abrigos y accesorios para mujer con hasta 50% de descuento. Ofertas Flash todos los días y envío a todo Lima.">
+  <meta property="og:title" content="NARA | Moda para mujer con ofertas todos los días">
+  <meta property="og:description" content="Vestidos, blusas, sastrería, abrigos y accesorios para mujer con hasta 50% de descuento. Ofertas Flash todos los días y envío a todo Lima.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1704775990154-b87562565d4c?auto=format&fit=crop&w=1200&q=80">
+  <meta name="theme-color" content="#0b3aa8">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="productos.js" defer></script>
   <script src="script.js" defer></script>
 </head>
 <body>
 
-  <div class="announce">Envío gratis en Lima desde S/ 250 · Cambios dentro de 15 días</div>
+  <div class="topbar">
+    <div class="container">
+      <span>🚚 Envío <b>GRATIS</b> en Lima desde S/ 199 · Paga con Yape, Plin o tarjeta</span>
+      <div class="topbar-links"><a href="guia-de-tallas">Guía de tallas</a><a href="contacto#faq">Ayuda</a><a href="nosotros">Nosotros</a></div>
+    </div>
+  </div>
 
   <!-- ============ MENÚ ============ -->
   <header>
-    <div class="container nav">
-      <ul class="menu" id="menu">
+    <div class="container">
+      <div class="head-main">
+        <a href="./" class="logo" aria-label="NARA inicio"><span class="logo-mark">N</span><span class="logo-text">NARA</span></a>
+        <ul class="menu" id="menu">
         <li><a href="./" class="active">Inicio</a></li>
-        <li><a href="catalogo">Colección</a></li>
-        <li><a href="guia-de-tallas">Tallas</a></li>
-        <li><a href="nosotros">Atelier</a></li>
-        <li><a href="contacto">Contacto</a></li>
-      </ul>
-      <a href="./" class="logo" aria-label="NARA Atelier inicio"><strong>NARA</strong><span>Atelier · Lima</span></a>
-      <div class="nav-actions">
-        <a href="catalogo" class="icon-btn" aria-label="Buscar"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></a>
-        <a href="carrito" class="icon-btn" aria-label="Bolsa de compras"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 13H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="cart-count"></span></a>
-        <button class="icon-btn hamburger" id="hamburger" aria-label="Abrir menú"><svg viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></svg></button>
+        <li><a href="catalogo?cat=vestidos">Vestidos</a></li>
+        <li><a href="catalogo?cat=tops">Blusas</a></li>
+        <li><a href="catalogo?cat=sastreria">Sastrería</a></li>
+        <li><a href="catalogo?cat=abrigos">Abrigos</a></li>
+        <li><a href="catalogo?cat=accesorios">Accesorios</a></li>
+        <li><a href="catalogo?ofertas=1" class="hot">Ofertas</a></li>
+        </ul>
+        <div class="head-icons">
+          <a href="contacto" class="head-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span class="lbl">Ayuda</span></a>
+          <a href="guia-de-tallas" class="head-icon"><svg viewBox="0 0 24 24"><path d="M3 17L17 3l4 4L7 21z"/><path d="M7 13l2 2M10 10l2 2M13 7l2 2"/></svg><span class="lbl">Tallas</span></a>
+          <a href="carrito" class="head-icon"><svg viewBox="0 0 24 24"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6L5 3H2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg><span class="lbl">Carrito</span><span class="cart-count"></span></a>
+          <button class="hamburger" id="hamburger" aria-label="Abrir menú"><svg style="width:28px;height:28px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        </div>
+      </div>
+      <div class="head-search">
+        <select class="cat-select" id="catSelect" aria-label="Categorías"><option value="">TODAS LAS CATEGORÍAS</option><option value="vestidos">Vestidos</option><option value="tops">Blusas y tops</option><option value="sastreria">Sastrería</option><option value="abrigos">Abrigos</option><option value="accesorios">Accesorios</option></select>
+        <form class="search" id="searchForm" role="search">
+          <input id="q" type="search" placeholder="Buscar vestidos, blazers, accesorios..." aria-label="Buscar">
+          <button type="submit" aria-label="Buscar"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></button>
+        </form>
+        <span class="flag"><i></i>PE</span>
       </div>
     </div>
   </header>
 
-  <!-- ============ PORTADA ============ -->
-  <section class="hero" style="padding:0">
-    <div class="hero-text reveal">
-      <span class="eyebrow">Colección Otoño · Invierno</span>
-      <h1>Elegancia que se <em>siente</em></h1>
-      <p>Prendas atemporales con cortes impecables y telas nobles, pensadas para la mujer que se viste para sí misma.</p>
-      <div class="hero-actions">
-        <a href="catalogo" class="btn btn-dark">Ver colección</a>
-        <a href="catalogo?cat=vestidos" class="btn btn-line">Vestidos</a>
+  <!-- ============ CARRUSEL ============ -->
+  <section class="hero">
+    <div class="container">
+      <div class="slider">
+        <div class="slide s1 active">
+          <div class="slide-text">
+            <small>Temporada Otoño</small>
+            <h1>¡Mega ofertas NARA!</h1>
+            <p>Vestidos, blazers y accesorios con descuentos que no vas a creer.</p>
+            <a href="catalogo?ofertas=1" class="btn btn-yellow">Comprar ahora</a>
+          </div>
+          <div class="slide-media">
+            <div class="burst"><div><span>Hasta</span><strong>-50%</strong></div></div>
+            <img src="https://images.unsplash.com/photo-1781496266499-a4516f159c10?auto=format&fit=crop&w=1000&q=80" alt="¡Mega ofertas NARA!" onerror="this.style.display='none'">
+          </div>
+        </div>
+        <div class="slide s2">
+          <div class="slide-text">
+            <small>Solo por hoy</small>
+            <h2>Ofertas Flash</h2>
+            <p>Precios especiales por tiempo limitado. ¡Corre antes de que se agoten!</p>
+            <a href="catalogo?flash=1" class="btn btn-white">Ver Ofertas Flash</a>
+          </div>
+          <div class="slide-media">
+            <div class="burst"><div><span>Desde</span><strong>S/39</strong></div></div>
+            <img src="https://images.unsplash.com/photo-1586079615844-c0abfb04dc79?auto=format&fit=crop&w=1000&q=80" alt="Ofertas Flash" loading="lazy" onerror="this.style.display='none'">
+          </div>
+        </div>
+        <div class="slide s3">
+          <div class="slide-text">
+            <small>Nueva colección</small>
+            <h2>Sastrería que empodera</h2>
+            <p>Blazers y trajes de corte impecable para la oficina y más allá.</p>
+            <a href="catalogo?cat=sastreria" class="btn btn-yellow">Descubrir</a>
+          </div>
+          <div class="slide-media">
+            <div class="burst"><div><span>Nuevos</span><strong>-30%</strong></div></div>
+            <img src="https://images.unsplash.com/photo-1612731486606-2614b4d74921?auto=format&fit=crop&w=1000&q=80" alt="Sastrería que empodera" loading="lazy" onerror="this.style.display='none'">
+          </div>
+        </div>
+        <button class="arrow prev" aria-label="Anterior">‹</button>
+        <button class="arrow next" aria-label="Siguiente">›</button>
+        <div class="dots"></div>
       </div>
-      <div class="hero-meta">
-        <div><strong>XS – XL</strong><span>Tallas</span></div>
-        <div><strong>15 días</strong><span>Para cambios</span></div>
-        <div><strong>24–48 h</strong><span>Envío en Lima</span></div>
+      <div class="tiles">
+        <a href="catalogo?cat=vestidos" class="tile t1"><span>Vestidos del día</span><img src="https://images.unsplash.com/photo-1704775991121-a7c5423ef8d3?auto=format&fit=crop&w=400&q=80" alt="Vestidos" loading="lazy" onerror="this.style.display='none'"></a>
+        <a href="catalogo?flash=1" class="tile t2"><span>⚡ Ofertas Flash</span><img src="https://images.unsplash.com/photo-1731589802397-6a1088d63630?auto=format&fit=crop&w=400&q=80" alt="Ofertas flash" loading="lazy" onerror="this.style.display='none'"></a>
+        <a href="catalogo?cat=accesorios" class="tile t3"><span>Joyas y regalos</span><img src="https://images.unsplash.com/photo-1770721478216-3e5dbbe8dcc2?auto=format&fit=crop&w=400&q=80" alt="Joyas" loading="lazy" onerror="this.style.display='none'"></a>
       </div>
-    </div>
-    <div class="hero-media">
-      <!-- FOTO PRINCIPAL: cambia el enlace del src para usar otra foto -->
-      <img src="https://images.unsplash.com/photo-1781496266499-a4516f159c10?auto=format&fit=crop&w=1400&q=80" alt="Mujer con vestido marrón elegante" onerror="this.style.display='none'">
-      <div class="hero-inset"><img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=600&q=80" alt="Mujer caminando junto al mar con bolso tejido" onerror="this.style.display='none'"></div>
-      <div class="hero-tag">Nuevo<b>Tonos tierra</b></div>
     </div>
   </section>
 
-  <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>Nueva colección</span><span>Hecho en Perú</span><span>Envíos a todo el país</span><span>Elegancia atemporal</span><span>Edición limitada</span><span>Nueva colección</span><span>Hecho en Perú</span><span>Envíos a todo el país</span><span>Elegancia atemporal</span><span>Edición limitada</span><span>Nueva colección</span><span>Hecho en Perú</span><span>Envíos a todo el país</span><span>Elegancia atemporal</span><span>Edición limitada</span><span>Nueva colección</span><span>Hecho en Perú</span><span>Envíos a todo el país</span><span>Elegancia atemporal</span><span>Edición limitada</span></div></div>
-
-  <!-- ============ CATEGORÍAS ============ -->
+  <!-- ============ OFERTAS FLASH ============ -->
   <section>
     <div class="container">
-      <div class="sec-head">
-        <div><span class="eyebrow">Explora</span><h2>Compra por <em>categoría</em></h2></div>
-        <a href="catalogo" class="link-u">Ver todo</a>
+      <div class="panel">
+        <div class="flash-head">
+          <h2><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg> Ofertas Flash <em style="font-style:normal;color:var(--blue-2)">NARA</em></h2>
+          <div class="countdown" id="countdown"></div>
+        </div>
+        <div class="row-scroll" id="flashRow"></div>
       </div>
-      <div class="cats">
-        <a href="catalogo?cat=vestidos" class="cat reveal"><img src="https://images.unsplash.com/photo-1785348056883-f5f92f2dc4ea?auto=format&fit=crop&w=700&q=80" alt="Vestidos" loading="lazy" onerror="this.style.display='none'"><div class="cat-label"><strong>Vestidos</strong><span>Ver →</span></div></a>
-        <a href="catalogo?cat=tops" class="cat reveal"><img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=700&q=80" alt="Blusas y tops" loading="lazy" onerror="this.style.display='none'"><div class="cat-label"><strong>Blusas y tops</strong><span>Ver →</span></div></a>
-        <a href="catalogo?cat=sastreria" class="cat reveal"><img src="https://images.unsplash.com/photo-1610765431323-d88c88a2b2c8?auto=format&fit=crop&w=700&q=80" alt="Sastrería" loading="lazy" onerror="this.style.display='none'"><div class="cat-label"><strong>Sastrería</strong><span>Ver →</span></div></a>
-        <a href="catalogo?cat=abrigos" class="cat reveal"><img src="https://images.unsplash.com/photo-1731589802397-6a1088d63630?auto=format&fit=crop&w=700&q=80" alt="Abrigos" loading="lazy" onerror="this.style.display='none'"><div class="cat-label"><strong>Abrigos</strong><span>Ver →</span></div></a>
-        <a href="catalogo?cat=accesorios" class="cat reveal"><img src="https://images.unsplash.com/photo-1618522755367-bcbb050438b6?auto=format&fit=crop&w=700&q=80" alt="Accesorios" loading="lazy" onerror="this.style.display='none'"><div class="cat-label"><strong>Accesorios</strong><span>Ver →</span></div></a>
-      </div>
+    </div>
+  </section>
+
+  <!-- ============ RECOMENDADAS ============ -->
+  <section style="padding-top:0">
+    <div class="container">
+      <div class="sec-title"><h2>Ofertas <em>recomendadas</em></h2><a href="catalogo?ofertas=1" class="see-all">Ver todas →</a></div>
+      <div class="products" id="recommended"></div>
+    </div>
+  </section>
+
+  <!-- ============ BANNERS ============ -->
+  <section style="padding-top:0">
+    <div class="container duo">
+      <a href="catalogo?cat=sastreria"><img src="https://images.unsplash.com/photo-1613915617430-8ab0fd7c6baf?auto=format&fit=crop&w=900&q=80" alt="Sastrería" loading="lazy" onerror="this.style.display='none'"><small>Para la oficina</small><strong>Sastrería<br>hasta -35%</strong><span>Comprar ahora</span></a>
+      <a href="catalogo?cat=accesorios"><img src="https://images.unsplash.com/photo-1764181237984-70ac5f211b06?auto=format&fit=crop&w=900&q=80" alt="Accesorios" loading="lazy" onerror="this.style.display='none'"><small>El toque final</small><strong>Joyas desde<br>S/ 39.90</strong><span>Ver accesorios</span></a>
     </div>
   </section>
 
   <!-- ============ NOVEDADES ============ -->
-  <section class="bg-white">
+  <section style="padding-top:0">
     <div class="container">
-      <div class="sec-head">
-        <div><span class="eyebrow">Recién llegados</span><h2>Lo más <em>deseado</em></h2></div>
-        <a href="catalogo" class="link-u">Ver colección completa</a>
-      </div>
-      <div class="products" id="featured"></div>
+      <div class="sec-title"><h2>Últimas <em>novedades</em></h2><a href="catalogo" class="see-all">Ver todo →</a></div>
+      <div class="products" id="newest"></div>
     </div>
   </section>
 
-  <!-- ============ EDITORIAL ============ -->
-  <section style="padding:0">
-    <div class="editorial">
-      <div class="editorial-media">
-        <div><img src="https://images.unsplash.com/photo-1781496265783-afd4e1338b2e?auto=format&fit=crop&w=900&q=80" alt="Mujer con vestido marrón entre flores" loading="lazy" onerror="this.style.display='none'"></div>
-        <div><img src="https://images.unsplash.com/photo-1704775988759-16fdeb0a2235?auto=format&fit=crop&w=600&q=80" alt="Detalle de vestido marrón" loading="lazy" onerror="this.style.display='none'"></div>
-        <div><img src="https://images.unsplash.com/photo-1595882669314-919b3d51f2c7?auto=format&fit=crop&w=600&q=80" alt="Mujer con vestido negro en la arena" loading="lazy" onerror="this.style.display='none'"></div>
-      </div>
-      <div class="editorial-text reveal">
-        <span class="eyebrow">Lookbook</span>
-        <h2>La paleta de la <em>temporada</em></h2>
-        <p>Caramelo, cacao, arena y negro profundo. Una colección pensada para combinarse entre sí y crear looks que duran más que una temporada.</p>
-        <div><a href="catalogo?cat=vestidos" class="btn btn-dark">Descubrir el lookbook</a></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ SERVICIOS ============ -->
-  <section style="padding:70px 0">
+  <!-- ============ CATEGORÍAS ============ -->
+  <section style="padding-top:0">
     <div class="container">
-      <div class="services">
-        <div class="service"><svg viewBox="0 0 24 24"><path d="M1 4h14v12H1zM15 8h4l3 3v5h-7"/><circle cx="5.5" cy="18.5" r="2"/><circle cx="18.5" cy="18.5" r="2"/></svg><strong>Envío gratis</strong><span>En Lima desde S/ 250</span></div>
-        <div class="service"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg><strong>Cambios fáciles</strong><span>Hasta 15 días</span></div>
-        <div class="service"><svg viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="1"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><strong>Pago seguro</strong><span>Yape, Plin o tarjeta</span></div>
-        <div class="service"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg><strong>Asesoría personal</strong><span>Te ayudamos por WhatsApp</span></div>
+      <div class="sec-title"><h2>Tus categorías <em>favoritas</em></h2></div>
+      <div class="fav-cats">
+        <a href="catalogo?cat=vestidos" class="fav-cat"><div><img src="https://images.unsplash.com/photo-1785348056883-f5f92f2dc4ea?auto=format&fit=crop&w=400&q=80" alt="Vestidos" loading="lazy" onerror="this.style.display='none'"></div><strong>Vestidos</strong></a>
+        <a href="catalogo?cat=tops" class="fav-cat"><div><img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=400&q=80" alt="Blusas y tops" loading="lazy" onerror="this.style.display='none'"></div><strong>Blusas y tops</strong></a>
+        <a href="catalogo?cat=sastreria" class="fav-cat"><div><img src="https://images.unsplash.com/photo-1610765431323-d88c88a2b2c8?auto=format&fit=crop&w=400&q=80" alt="Sastrería" loading="lazy" onerror="this.style.display='none'"></div><strong>Sastrería</strong></a>
+        <a href="catalogo?cat=abrigos" class="fav-cat"><div><img src="https://images.unsplash.com/photo-1731589802397-6a1088d63630?auto=format&fit=crop&w=400&q=80" alt="Abrigos" loading="lazy" onerror="this.style.display='none'"></div><strong>Abrigos</strong></a>
+        <a href="catalogo?cat=accesorios" class="fav-cat"><div><img src="https://images.unsplash.com/photo-1618522755367-bcbb050438b6?auto=format&fit=crop&w=400&q=80" alt="Joyas" loading="lazy" onerror="this.style.display='none'"></div><strong>Joyas</strong></a>
+        <a href="catalogo?cat=vestidos" class="fav-cat"><div><img src="https://images.unsplash.com/photo-1776841818483-700f88aace44?auto=format&fit=crop&w=400&q=80" alt="De fiesta" loading="lazy" onerror="this.style.display='none'"></div><strong>De fiesta</strong></a>
       </div>
     </div>
   </section>
 
-  <!-- ============ BANNER ============ -->
-  <section class="banner">
-    <img src="https://images.unsplash.com/photo-1704775985599-3518cbc459bf?auto=format&fit=crop&w=1800&q=80" alt="Mujer con vestido marrón y accesorios" loading="lazy" onerror="this.style.display='none'">
-    <div class="container reveal">
-      <span class="eyebrow">Bienvenida</span>
-      <h2>10% en tu <em>primera</em> compra</h2>
-      <p>Menciona este código al finalizar tu pedido por WhatsApp y te aplicamos el descuento.</p>
-      <div class="code">BIENVENIDA10</div><br>
-      <a href="catalogo" class="btn btn-light">Comprar ahora</a>
+  <section style="padding-top:10px">
+    <div class="container perks">
+      <div class="perk"><i><svg viewBox="0 0 24 24"><path d="M1 4h14v12H1zM15 8h4l3 3v5h-7"/><circle cx="5.5" cy="18.5" r="2"/><circle cx="18.5" cy="18.5" r="2"/></svg></i><div><strong>Envío gratis</strong><span>En Lima desde S/ 199</span></div></div>
+      <div class="perk"><i><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></i><div><strong>Cambios fáciles</strong><span>Hasta 15 días</span></div></div>
+      <div class="perk"><i><svg viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></i><div><strong>Pago seguro</strong><span>Yape, Plin o tarjeta</span></div></div>
+      <div class="perk"><i><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg></i><div><strong>Atención rápida</strong><span>Por WhatsApp</span></div></div>
     </div>
   </section>
 
-  <!-- ============ OPINIONES ============ -->
-  <!-- IMPORTANTE: reemplaza con opiniones reales de clientas (con su permiso) -->
-  <section class="bg-white">
+  <section style="padding-top:10px">
     <div class="container">
-      <div class="sec-head center"><span class="eyebrow">Opiniones</span><h2>Ellas ya visten <em>NARA</em></h2></div>
-      <div class="quotes">
-        <div class="quote reveal">
-          <div class="stars">★★★★★</div>
-          <p>"Aquí irá la opinión real de una clienta sobre la calidad de las prendas."</p>
-          <small>Nombre de clienta · Ejemplo</small>
-        </div>
-        <div class="quote reveal">
-          <div class="stars">★★★★★</div>
-          <p>"Aquí irá la opinión real de una clienta sobre el calce y las tallas."</p>
-          <small>Nombre de clienta · Ejemplo</small>
-        </div>
-        <div class="quote reveal">
-          <div class="stars">★★★★★</div>
-          <p>"Aquí irá la opinión real de una clienta sobre la atención y el envío."</p>
-          <small>Nombre de clienta · Ejemplo</small>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-sand">
-    <div class="container">
-      <div class="newsletter reveal">
-        <span class="eyebrow">Club NARA</span>
-        <h2>Sé la primera en saberlo</h2>
-        <p>Nuevas colecciones, preventas y ofertas exclusivas directo a tu correo.</p>
+      <div class="news">
+        <div><h2>¡Recibe ofertas exclusivas!</h2><p>Suscríbete y entérate primero de las Ofertas Flash y nuevas colecciones.</p></div>
         <form class="news-form">
           <input type="email" required placeholder="Tu correo electrónico" aria-label="Correo electrónico">
-          <button type="submit">Suscribirme →</button>
+          <button class="btn btn-yellow" type="submit">Suscribirme</button>
         </form>
       </div>
     </div>
@@ -176,34 +185,24 @@
 
   <!-- ============ PIE DE PÁGINA ============ -->
   <footer>
-    <div class="container footer-top">
-      <div class="brand">
-        <a href="./" class="logo"><strong>NARA</strong><span>Atelier · Lima</span></a>
-        <p>Moda femenina atemporal, diseñada para acompañarte todos los días y en cada ocasión especial.</p>
-        <div class="socials">
-          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm5.5-9.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5zm3 15a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3z"/></svg></a>
-          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8V6c0-.8.5-1 1-1h2V2h-3c-3 0-4 2-4 4v2H8v3h2v11h4V11h3l.5-3z"/></svg></a>
-          <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16.5 2h-3.3v13.2a2.9 2.9 0 1 1-2.1-2.8V9a6.2 6.2 0 1 0 5.4 6.2V8.6a7.6 7.6 0 0 0 4.5 1.4V6.7a4.5 4.5 0 0 1-4.5-4.7z"/></svg></a>
-        </div>
-      </div>
+    <div class="container footer-grid">
       <div>
-        <h4>Colección</h4>
+        <h4>Servicio al cliente</h4>
         <ul>
-          <li><a href="catalogo?cat=vestidos">Vestidos</a></li>
-          <li><a href="catalogo?cat=tops">Blusas y tops</a></li>
-          <li><a href="catalogo?cat=sastreria">Sastrería</a></li>
-          <li><a href="catalogo?cat=abrigos">Abrigos</a></li>
-          <li><a href="catalogo?cat=accesorios">Accesorios</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Ayuda</h4>
-        <ul>
+          <li><a href="contacto">Atención al cliente</a></li>
+          <li><a href="contacto#faq">Envíos y entregas</a></li>
+          <li><a href="contacto#faq">Cambios y devoluciones</a></li>
           <li><a href="guia-de-tallas">Guía de tallas</a></li>
-          <li><a href="contacto#faq">Envíos y cambios</a></li>
-          <li><a href="contacto#faq">Preguntas frecuentes</a></li>
-          <li><a href="nosotros">El atelier</a></li>
-          <li><a href="carrito">Mi bolsa</a></li>
+        </ul>
+        <div class="made"><i></i>Hecho en Perú</div>
+      </div>
+      <div>
+        <h4>Acerca de NARA</h4>
+        <ul>
+          <li><a href="nosotros">Quiénes somos</a></li>
+          <li><a href="catalogo">Toda la tienda</a></li>
+          <li><a href="catalogo?ofertas=1">Ofertas</a></li>
+          <li><a href="catalogo?flash=1">Ofertas Flash</a></li>
         </ul>
       </div>
       <div>
@@ -211,14 +210,24 @@
         <ul>
           <li><a class="wa-link" href="#">WhatsApp: +51 999 999 999</a></li>
           <li>Lima, Perú</li>
-          <li>Lun a Sáb · 10:00 a.m. – 8:00 p.m.</li>
+          <li>Lun a Sáb · 9:00 a.m. – 8:00 p.m.</li>
+          <li><a class="wa-link" href="#" data-msg="Hola NARA 👋 Quiero información para compras por mayor.">Ventas por mayor</a></li>
         </ul>
-        <div class="pay-icons"><span>Yape</span><span>Plin</span><span>Visa</span><span>Mastercard</span></div>
+      </div>
+      <div>
+        <h4>Síguenos</h4>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8V6c0-.8.5-1 1-1h2V2h-3c-3 0-4 2-4 4v2H8v3h2v11h4V11h3l.5-3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm5.5-9.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5zm3 15a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3z"/></svg></a>
+          <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16.5 2h-3.3v13.2a2.9 2.9 0 1 1-2.1-2.8V9a6.2 6.2 0 1 0 5.4 6.2V8.6a7.6 7.6 0 0 0 4.5 1.4V6.7a4.5 4.5 0 0 1-4.5-4.7z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.8 15.1V8.9l5.8 3.1z"/></svg></a>
+        </div>
+        <h4>Medios de pago</h4>
+        <div class="pay-logos"><span class="visa">VISA</span><span class="mc">Mastercard</span><span class="yape">Yape</span><span class="plin">Plin</span></div>
       </div>
     </div>
-    <div class="container footer-word">NARA</div>
     <div class="container footer-bottom">
-      <div>© <span class="year"></span> NARA Atelier · Tienda de demostración</div>
+      <div>© <span class="year"></span> NARA · Tienda de demostración: productos, precios y calificaciones de ejemplo.</div>
       <div>Diseño y desarrollo: <a href="https://ziko.pro" target="_blank" rel="noopener">ziko.pro</a></div>
     </div>
   </footer>
