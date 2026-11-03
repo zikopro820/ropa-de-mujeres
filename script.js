@@ -2,7 +2,7 @@
    NARA — Funciones de la tienda (demo de ziko.pro)
    ⚠️ CAMBIA AQUÍ TUS DATOS
    ========================================================= */
-const WHATSAPP     = "51999999999"; // código de país + número, sin + ni espacios
+const WHATSAPP     = "51984713695"; // código de país + número, sin + ni espacios
 const COSTO_ENVIO  = 12;            // costo de envío en soles
 const ENVIO_GRATIS = 199;           // envío gratis desde este monto
 const TIENDA       = "NARA";
