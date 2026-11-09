@@ -14,14 +14,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="firebase-config.js" defer></script>
   <script src="productos.js" defer></script>
+  <script src="semilla.js" defer></script>
+  <script src="tienda.js" defer></script>
   <script src="script.js" defer></script>
 </head>
 <body>
 
   <div class="topbar">
     <div class="container">
-      <span>🚚 Envío <b>GRATIS</b> en Lima desde S/ 199 · Paga con Yape, Plin o tarjeta</span>
+      <span>🚚 Envío <b>GRATIS</b> en Lima desde S/ 199 · Paga con Yape, Plin o transferencia</span>
       <div class="topbar-links"><a href="guia-de-tallas">Guía de tallas</a><a href="contacto#faq">Ayuda</a><a href="nosotros">Nosotros</a></div>
     </div>
   </div>
@@ -43,6 +46,7 @@
         <div class="head-icons">
           <a href="contacto" class="head-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span class="lbl">Ayuda</span></a>
           <a href="guia-de-tallas" class="head-icon"><svg viewBox="0 0 24 24"><path d="M3 17L17 3l4 4L7 21z"/><path d="M7 13l2 2M10 10l2 2M13 7l2 2"/></svg><span class="lbl">Tallas</span></a>
+          <a href="mis-compras" class="head-icon"><svg viewBox="0 0 24 24"><path d="M5 2h14v20l-3-2-2 2-2-2-2 2-2-2-3 2zM9 7h6M9 11h6M9 15h4"/></svg><span class="lbl">Mis compras</span></a>
           <a href="carrito" class="head-icon"><svg viewBox="0 0 24 24"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6L5 3H2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg><span class="lbl">Carrito</span><span class="cart-count"></span></a>
           <button class="hamburger" id="hamburger" aria-label="Abrir menú"><svg style="width:28px;height:28px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
         </div>
@@ -102,6 +106,8 @@
           <li><a href="contacto#faq">Envíos y entregas</a></li>
           <li><a href="contacto#faq">Cambios y devoluciones</a></li>
           <li><a href="guia-de-tallas">Guía de tallas</a></li>
+          <li><a href="mis-compras">Mis compras</a></li>
+          <li><a href="pedido">Seguir mi pedido</a></li>
         </ul>
         <div class="made"><i></i>Hecho en Perú</div>
       </div>
@@ -117,9 +123,9 @@
       <div>
         <h4>Contacto</h4>
         <ul>
-          <li><a class="wa-link" href="#">WhatsApp: +51 999 999 999</a></li>
-          <li>Lima, Perú</li>
-          <li>Lun a Sáb · 9:00 a.m. – 8:00 p.m.</li>
+          <li><a class="wa-link js-tel" data-pre="WhatsApp: " href="#">WhatsApp: +51 999 999 999</a></li>
+          <li class="js-dir">Lima, Perú</li>
+          <li class="js-hor">Lun a Sáb · 9:00 a.m. – 8:00 p.m.</li>
           <li><a class="wa-link" href="#" data-msg="Hola NARA 👋 Quiero información para compras por mayor.">Ventas por mayor</a></li>
         </ul>
       </div>
